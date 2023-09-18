@@ -8,7 +8,7 @@ formEl.addEventListener('submit', formElSubmit)
 function formElSubmit(event) {
     event.preventDefault();
 
-    const form = event.carrentTarget;
+    const form = event.currentTarget;
     const email = form.elements.email.value;
     const password = form.elements.password.value;
 
