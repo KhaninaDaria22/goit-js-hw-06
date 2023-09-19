@@ -7,8 +7,7 @@ const maxLength = inputBtn.getAttribute('data-length');
 
 function oninputBlur() {
     const inputValue = inputBtn.value;
-    inputBtn.classList.add('invalid');
-    if(inputValue.length === Number(maxLength)) {
+    if(inputValue.trim().length === Number(maxLength)) {
         inputBtn.classList.remove('invalid');
         inputBtn.classList.add('valid');
     } else {

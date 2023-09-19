@@ -6,7 +6,7 @@ console.log(spanEl.textContent);
 function currentName(event) {
     const input = event.currentTarget;
     
-    if (input.value == ""){
+    if (input.value.trim() == ""){
         spanEl.textContent = "Anonymous"
     } else {
         spanEl.textContent = input.value;
