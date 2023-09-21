@@ -1,4 +1,4 @@
-const items = document.querySelectorAll('#categories');
+const items = document.querySelector('#categories');
 const itemsChild = items.children;
 
 [...itemsChild].forEach(item => 

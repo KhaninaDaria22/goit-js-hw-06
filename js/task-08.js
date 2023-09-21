@@ -21,9 +21,5 @@ function formElSubmit(event) {
         password,
     }
     console.log(formObject);
-
-    buttonEl.addEventListener("click", functionClick);
-    function functionClick() {
         formEl.reset();
-    }
 }
